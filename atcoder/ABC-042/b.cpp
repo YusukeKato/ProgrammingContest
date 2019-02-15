@@ -11,11 +11,11 @@ void sortString(string* s, int j, int L)
     {
         if(s1[k] > s2[k])
         {
-            //cout << " s1: " << s1[k] << " s2: " << s2[k] << " ";
             s[j] = s2;
             s[j+1] = s1;
             break;
         }
+        // ここが重要、交換する必要がないと分かった時点で終了
         else if(s1[k] < s2[k])
         {
             break;
@@ -25,6 +25,7 @@ void sortString(string* s, int j, int L)
 
 int main()
 {
+    // 入力
     int N, L;
     cin >> N >> L;
     string s[N];
@@ -33,16 +34,16 @@ int main()
         cin >> s[i];
     }
 
+    // 文字列をソート
     for(int i = 0; i < N; i++)
     {
         for(int j = 0; j < N-1; j++)
         {
             sortString(s, j, L);
-            //cout << " i:" << i << " j:" << j << " ";
-            //for(int t = 0; t < N; t++) cout << s[t];
         }
     }
 
+    // 答えの文字列を作成
     string result = "";
     for(int i = 0; i < N; i++)
     {
