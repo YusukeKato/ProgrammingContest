@@ -3,11 +3,9 @@
 ## 目次
 - [ABC-042](#ABC-042)
 
-<a href="#ABC-042"></a>
-## ABC-042
-[問題（AtCoderへ）](https://atcoder.jp/contests/abc042/tasks/)
-|
-[ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-042/)
+## <a href="#ABC-042">ABC-042</a>
+- [問題（AtCoderへ）](https://atcoder.jp/contests/abc042/tasks/)
+- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-042/)
 
 ### ABC-042:A
 三つの数字が俳句「575」かどうか判定する問題。
@@ -38,9 +36,8 @@ std::sort(s.gegin(), s.end(), std::greater<int>());
 
 
 ## ABC-044
-[問題（AtCoderへ）](https://atcoder.jp/contests/abc044/tasks/)
-|
-[ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-044/)
+- [問題（AtCoderへ）](https://atcoder.jp/contests/abc044/tasks/)
+- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-044/)
 
 ## ABC-044:A
 ホテル代を求める問題。
@@ -55,9 +52,8 @@ A問題の中でも好きな問題。
 他の解法もあるのだろうか。
 
 ## ABC-051
-[問題（AtCoderへ）](https://atcoder.jp/contests/abc051/tasks/)
-|
-[ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-051/)
+- [問題（AtCoderへ）](https://atcoder.jp/contests/abc051/tasks/)
+- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-051/)
 
 ### ABC-051:C
 条件を見落としてた（sx < tx, sy < ty）。
