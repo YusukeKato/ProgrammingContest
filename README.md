@@ -5,7 +5,10 @@
 - [ABC-043](#ABC-043)
 - [ABC-044](#ABC-044)
 - [ABC-051](#ABC-051)
+- [ABC-118](#ABC-118)
 
+
+<!------------------------------------------------------------------------------------------------------------------->
 ## <a href="#ABC-042">ABC-042</a>
 - [問題（AtCoderへ）](https://atcoder.jp/contests/abc042/tasks/)
 - [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-042/)
@@ -37,6 +40,8 @@ std::sort(s.gegin(), s.end(), std::greater<int>());
 ```
 参考：http://7ujm.net/stl/sort.html
 
+
+<!------------------------------------------------------------------------------------------------------------------->
 ## <a href="#ABC-042">ABC-043</a>
 - [問題（AtCoderへ）](https://atcoder.jp/contests/abc043/tasks/)
 - [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-043/)
@@ -51,6 +56,8 @@ std::sort(s.gegin(), s.end(), std::greater<int>());
 とりあえず"B"かどうか判定して、一文字ずつずらしてみた。
 他の解法も確認したい。
 
+
+<!------------------------------------------------------------------------------------------------------------------->
 ## <a href="#ABC-044">ABC-044</a>
 - [問題（AtCoderへ）](https://atcoder.jp/contests/abc044/tasks/)
 - [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-044/)
@@ -67,6 +74,8 @@ A問題の中でも好きな問題。
 この方法は結構使う気がする。
 他の解法もあるのだろうか。
 
+
+<!------------------------------------------------------------------------------------------------------------------->
 ## <a href="#ABC-051">ABC-051</a>
 - [問題（AtCoderへ）](https://atcoder.jp/contests/abc051/tasks/)
 - [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-051/)
@@ -77,3 +86,26 @@ A問題の中でも好きな問題。
 この条件がなかったらかなり面倒くさそうだと思った（主観）。
 とはいいつつ、仮に条件がなくても経路探索の典型問題なんだろうなと思う。
 典型問題でも解けるか不安。
+
+
+<!------------------------------------------------------------------------------------------------------------------->
+## <a href="#ABC-051">ABC-118</a>
+- [問題（AtCoderへ）](https://atcoder.jp/contests/abc118/tasks/)
+- [解説動画](https://www.youtube.com/watch?v=qBxvXX5hkAA)
+- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-118/)
+
+### ABC-118:A
+AがBの約数かどうか判定する問題。
+AでBが割り切れるかどうかで条件分岐。
+
+### ABC-118:B
+アンケートで全員が「好き」と答えたものの合計を答える問題。
+私は長さMの配列を作ってカウントした。
+
+### ABC-118:C
+解けなかったから解説を読んだ。
+最大公約数を使うという発想が出てこない。
+割り算したときの余りを使って解こうとしたけどよく分からなくなってしまった。
+解説の動画を見てなんとなく理解した。
+ユークリッドの互除法に近いことはしてたみたい。
+でも圧倒的にstd::gcd()使った方が簡潔で分かりやすい。
