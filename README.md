@@ -37,7 +37,7 @@ std::sort(s.gegin(), s.end(), std::greater<int>());
 ```
 参考：http://7ujm.net/stl/sort.html
 
-## <a href="#ABC-042">ABC-042</a>
+## <a href="#ABC-042">ABC-043</a>
 - [問題（AtCoderへ）](https://atcoder.jp/contests/abc043/tasks/)
 - [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-043/)
 
@@ -46,7 +46,7 @@ std::sort(s.gegin(), s.end(), std::greater<int>());
 私は普通に足し合わせて解いた。
 解説を読むと、N*(N+1)/2 でもよいと書いてあって、「あっ、ガウスだ」と思った。
 
-### ABC-044:B
+### ABC-043:B
 「0」と「1」と「バックスペース」の三つのキーでできたキーボードでエディタ編集を試みる問題。
 とりあえず"B"かどうか判定して、一文字ずつずらしてみた。
 他の解法も確認したい。
