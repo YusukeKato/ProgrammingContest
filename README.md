@@ -2,6 +2,9 @@
 
 ## 目次
 - [ABC-042](#ABC-042)
+- [ABC-043](#ABC-043)
+- [ABC-044](#ABC-044)
+- [ABC-051](#ABC-051)
 
 ## <a href="#ABC-042">ABC-042</a>
 - [問題（AtCoderへ）](https://atcoder.jp/contests/abc042/tasks/)
@@ -34,12 +37,25 @@ std::sort(s.gegin(), s.end(), std::greater<int>());
 ```
 参考：http://7ujm.net/stl/sort.html
 
+## <a href="#ABC-042">ABC-042</a>
+- [問題（AtCoderへ）](https://atcoder.jp/contests/abc043/tasks/)
+- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-043/)
 
-## ABC-044
+### ABC-043:A
+1+2+......+N と足し合わせていく問題。
+私は普通に足し合わせて解いた。
+解説を読むと、N*(N+1)/2 でもよいと書いてあって、「あっ、ガウスだ」と思った。
+
+### ABC-044:B
+「0」と「1」と「バックスペース」の三つのキーでできたキーボードでエディタ編集を試みる問題。
+とりあえず"B"かどうか判定して、一文字ずつずらしてみた。
+他の解法も確認したい。
+
+## <a href="#ABC-044">ABC-044</a>
 - [問題（AtCoderへ）](https://atcoder.jp/contests/abc044/tasks/)
 - [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-044/)
 
-## ABC-044:A
+### ABC-044:A
 ホテル代を求める問題。
 N日泊まるけど、K日間はX円で、そのあとはY円のやつ。
 小学生の算数の問題でよく見た気がする。
@@ -51,7 +67,7 @@ A問題の中でも好きな問題。
 この方法は結構使う気がする。
 他の解法もあるのだろうか。
 
-## ABC-051
+## <a href="#ABC-051">ABC-051</a>
 - [問題（AtCoderへ）](https://atcoder.jp/contests/abc051/tasks/)
 - [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-051/)
 
