@@ -1,4 +1,4 @@
-# AtCoder で解いた問題と考察、または感想
+# AtCoder で解いた問題と感想
 
 ## 目次
 - [覚えておきたい問題](#oboeteokitai)
