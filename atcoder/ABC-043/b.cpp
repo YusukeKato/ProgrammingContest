@@ -33,9 +33,6 @@ int main()
             // また、先頭から判定
             i = -1;
         }
-
-        // デバッグ
-        //cout << s << endl;
     }
 
     // 出力する文字列を作成
@@ -45,8 +42,6 @@ int main()
         if(s[i] != '2') result += s[i];
     }
 
+    // 出力
     cout << result;
-
-    // デバッグ
-    //cout << result.length();
 }

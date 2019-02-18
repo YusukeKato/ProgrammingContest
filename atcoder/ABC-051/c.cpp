@@ -14,6 +14,7 @@ using namespace std;
 
 int main()
 {
+    // 入力
     int sx, sy, tx, ty;
     cin >> sx >> sy >> tx >> ty;
 
@@ -44,5 +45,6 @@ int main()
     for(int i = 0; i < dy+1; i++) s += 'D';
     s += 'R';
 
+    // 出力
     cout << s;
 }

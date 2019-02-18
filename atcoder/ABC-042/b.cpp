@@ -3,8 +3,10 @@
 #include <vector>
 using namespace std;
 
+// 文字列をソート、std::sort()でソートできるらしい
 void sortString(string* s, int j, int L)
 {
+    // 一文字目から辞書的に比較 
     string s1 = s[j];
     string s2 = s[j+1];
     for(int k = 0; k < L; k++)
@@ -15,7 +17,7 @@ void sortString(string* s, int j, int L)
             s[j+1] = s1;
             break;
         }
-        // ここが重要、交換する必要がないと分かった時点で終了
+        // ここが重要、交換する必要がないと分かった時点ですぐに終了させる
         else if(s1[k] < s2[k])
         {
             break;

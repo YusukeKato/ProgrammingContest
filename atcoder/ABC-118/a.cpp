@@ -3,9 +3,11 @@ using namespace std;
 
 int main()
 {
+    // 入力
     int a, b;
     cin >> a >> b;
 
+    // bがaで割り切れるかどうかで分岐
     if(b % a == 0)
     {
         int c = a + b;
