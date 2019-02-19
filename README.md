@@ -12,11 +12,11 @@
 - [ABC-118](#ABC-118)
 
 # <a href="#oboeteokitai">覚えておきたい問題</a>
-- [ABC-042](#ABC-042) B: Iroha Loves Strings: 文字列のソート
-- [ABC-044](#ABC-044) B: Beautiful Strings: アルファベットと文字コード
-- [ABC-054](#ABC-054) C: One-Stroke Path: 無向グラフ、深さ優先探索（DFS）
-- [ABC-106](#ABC-106) D: AtCoder Express2: 二次元配列の累積和
-- [ABC-118](#ABC-118) C: Monster Batle Royale: ユークリッドの互除法
+- [ABC-042](#ABC-042) B: 文字列のソート [Iroha Loves Strings]
+- [ABC-044](#ABC-044) B: アルファベットと文字コード [Beautiful Strings]
+- [ABC-054](#ABC-054) C: 無向グラフ、深さ優先探索（DFS）[One-Stroke Path]
+- [ABC-106](#ABC-106) D: 二次元配列の累積和 [AtCoder Express2]
+- [ABC-118](#ABC-118) C: ユークリッドの互除法 [Monster Batle Royale]
 
 <!------------------------------------------------------------------------------------------------------------------->
 # <a href="#ABC-042">ABC-042</a>
