@@ -200,6 +200,7 @@ AでBが割り切れるかどうかで条件分岐。
 # <a href="#ABC-120">ABC-120</a>
 ---
 - [問題（AtCoderへ）](https://atcoder.jp/contests/abc120/tasks/)
+- [解説動画](https://youtu.be/zV3Ul2pA2Fw)
 - [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-120/)
 
 ### ABC-120:A Favorite Sound
@@ -223,3 +224,14 @@ if文でいいと思う。
 解説を読んでめちゃくちゃ簡単だということに気がついた。
 コード自体はA問題くらい簡単。
 頭がかっちかちでダメ。
+あと、解説動画でカウントするときのおすすめの書き方を見て、なるほどと思った。
+
+```
+vector<int> cnt(2, 0); // 長さ2の配列、0で初期化
+for(int i = 0; i < S.size(); i++)
+{
+    // '0' - '0' = 0 : cnt[0]++
+    // '1' - '0' = 1 : cnt[1]++
+    cnt[S[i] - '0']++;
+}
+```
