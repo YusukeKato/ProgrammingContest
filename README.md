@@ -11,6 +11,7 @@
 - [ABC-106](#ABC-106)
 - [ABC-118](#ABC-118)
 - [ABC-120](#ABC-120)
+- [ABC-121](#ABC-121)
 
 # <a href="#oboeteokitai">覚えておきたい問題</a>
 - [ABC-042](#ABC-042) B: 文字列のソート [Iroha Loves Strings]
@@ -235,3 +236,57 @@ for(int i = 0; i < S.size(); i++)
     cnt[S[i] - '0']++;
 }
 ```
+
+<!------------------------------------------------------------------------------------------------------------------->
+# <a href="#ABC-120">ABC-120</a>
+---
+- [問題（AtCoderへ）](https://atcoder.jp/contests/abc121/tasks/)
+- [解説動画](https://youtu.be/igfVeTsGeYw)
+- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-121/)
+
+### ABC-121:A White Cells 
+単純に面積を求めるような問題。
+小学生の算数の問題でありそう。
+
+### ABC-121:B Can you solve this?
+入力が比較的多い問題。
+入力がちゃんとできれば、あとは掛け算して条件分岐させるだけ。
+
+### ABC-121:C Energy Drink Collector
+ソートをする問題。
+私は自分でマージソートを実装したんだけど（コピペ）、
+ふつうにsort関数でいいらしい。
+リファレンスを読むとsort関数は強いクイックソートで、
+計算量はO(N logN)になっているとのこと。
+
+あと、ふたつの配列を同じようにソートする必要がある。
+こういうときはvectorのpairを使うと良いらしい。
+
+別解ではmapを使う解法もある。
+mapは勝手にソートもしてくれるらしく、
+さらに定義していない要素は勝手に０で初期化してくれてもいるらしい。
+つまりめちゃくちゃ便利とのこと。
+
+### ABC-121:D XOR World
+これは分からなかったから、解説を読んだ（そして解説動画を見た）。
+単純にfor文回したらTLEすることは分かってたから、
+何か規則とかあるんだろうなとは思ったけど、
+全然見つけられなかった。
+
+解説動画を見て「たしかに情報処理で、xorにそんな規則があるみたいな話は聞いたな」
+となんとなく思い出せた。
+それだけでもコンテストに出たかいがある。
+
+## 参考
+
+今すぐ使える C++ コーディングテクニック集
+https://torus711.hatenablog.com/entry/20131205/p1
+
+sort リファレンス
+https://cpprefjp.github.io/reference/algorithm/sort.html
+
+map まとめ
+https://qiita.com/_EnumHack/items/f462042ec99a31881a81
+
+C++で数値を2進数表記で出力する方法（実行時編）
+http://code-mynote.blogspot.com/2014/01/c2.html
