@@ -1,4 +1,4 @@
-# AtCoder で解いた問題と感想
+﻿# AtCoder で解いた問題と感想
 
 ## 目次
 - [覚えておきたい問題](#oboeteokitai)
@@ -12,6 +12,7 @@
 - [ABC-118](#ABC-118)
 - [ABC-120](#ABC-120)
 - [ABC-121](#ABC-121)
+- [参考](#sankou)
 
 # <a href="#oboeteokitai">覚えておきたい問題</a>
 - [ABC-042](#ABC-042) B: 文字列のソート [Iroha Loves Strings]
@@ -238,7 +239,7 @@ for(int i = 0; i < S.size(); i++)
 ```
 
 <!------------------------------------------------------------------------------------------------------------------->
-# <a href="#ABC-120">ABC-120</a>
+# <a href="#ABC-121">ABC-121</a>
 ---
 - [問題（AtCoderへ）](https://atcoder.jp/contests/abc121/tasks/)
 - [解説動画](https://youtu.be/igfVeTsGeYw)
@@ -277,7 +278,7 @@ mapは勝手にソートもしてくれるらしく、
 となんとなく思い出せた。
 それだけでもコンテストに出たかいがある。
 
-## 参考
+# <a href="#sankou">参考</a>
 
 今すぐ使える C++ コーディングテクニック集
 https://torus711.hatenablog.com/entry/20131205/p1
