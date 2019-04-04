@@ -16,6 +16,8 @@
     - [ABC-070](#ABC-070)
     - [ABC-073](#ABC-073)
     - [ABC-075](#ABC-075)
+    - [ABC-076](#ABC-076)
+    - [ABC-079](#ABC-079)
     - [ABC-106](#ABC-106)
     - [ABC-108](#ABC-108)
     - [ABC-118](#ABC-118)
@@ -44,6 +46,7 @@
 - [ABC-118](#ABC-118) C: ユークリッドの互除法 [Monster Batle Royale]
 - [ABC-122](#ABC-122) C: 累積和の典型問題 [GeT AC]
 - [ABC-075](#ABC-075) C: グラフ、DFSの再帰関数
+- [ABC-079](#ABC-079) C: ビットのシフトを使った全探索(ABC-045:C)
 
 # <a href="#oboeteokitai">また考えたい問題</a>
 - [ABC-045](#ABC-045) C: 実装が難しい [Many Formulas]
@@ -337,6 +340,17 @@ N個の数字が与えられて、
 
 そして、余った'?'は全て'a'に置換する。辞書順最小なので。
 
+<!------------------------------------------------------------------------------------------------------------------->
+# <a href="#ABC-079">ABC-079</a>
+---
+- [問題（AtCoderへ）](https://atcoder.jp/contests/abc079/tasks/)
+- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-079/)
+
+### ABC-079:C Train Ticket
+解くこと自体は簡単。
+実装がちょっと大変。
+if文8個書けばいいわけだけど、
+ビットのシフトを使った方がちゃんとしてると思う。
 
 <!------------------------------------------------------------------------------------------------------------------->
 # <a href="#ABC-106">ABC-106</a>
@@ -591,3 +605,6 @@ https://qiita.com/_EnumHack/items/f462042ec99a31881a81
 
 C++で数値を2進数表記で出力する方法（実行時編）
 http://code-mynote.blogspot.com/2014/01/c2.html
+
+sstreamを使ってint型からstring型に変換
+https://www.sejuku.net/blog/49199
