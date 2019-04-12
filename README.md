@@ -410,6 +410,75 @@ for(int i = 0; i < 1<<10; i++)
 - [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-084/)
 
 ### ABC-084:C Special Trains
+N個の駅、i から i+1 の駅に時間Ciで到着、
+各駅では時刻Siから運行を開始してFi秒ごとに電車が出る。
+
+各駅iから出発して駅Nまで行くのにかかる秒数を答える問題。
+
+Nが小さいからシミュレーションで十分解ける問題だった。
+
+<!------------------------------------------------------------------------------------------------------------------->
+# <a href="#ABC-085">ABC-085</a>
+---
+- [問題（AtCoderへ）](https://atcoder.jp/contests/abc085/tasks/)
+- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-085/)
+
+### ABC-085:C Otoshidama 
+けんちょんさんの記事でみた問題。
+
+だから問題なく解けてしまった。
+
+処理時間を削減するためのちょっとした工夫が思いつけるかどうか。
+
+<!------------------------------------------------------------------------------------------------------------------->
+# <a href="#ABC-088">ABC-088</a>
+---
+- [問題（AtCoderへ）](https://atcoder.jp/contests/abc088/tasks/)
+- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-088/)
+
+### ABC-088:C Takahashi's Information 
+解説を読んだら、なるほどって感じの問題だった。
+
+なぜか解けない。
+
+<!------------------------------------------------------------------------------------------------------------------->
+# <a href="#ABC-089">ABC-089</a>
+---
+- [問題（AtCoderへ）](https://atcoder.jp/contests/abc089/tasks/)
+- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-089/)
+
+### ABC-089:C March 
+'M''A''R''C''H'をそれぞれ数えて、
+全通り（10通り）全て数えて合計したものが答え。
+
+<!------------------------------------------------------------------------------------------------------------------->
+# <a href="#ABC-096">ABC-096</a>
+---
+- [問題（AtCoderへ）](https://atcoder.jp/contests/abc096/tasks/)
+- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-096/)
+
+### ABC-096:C Grid Repainting2 
+'#'が二つ続くマスがあるかどうか判定するだけの問題。
+
+<!------------------------------------------------------------------------------------------------------------------->
+# <a href="#ABC-099">ABC-099</a>
+---
+- [問題（AtCoderへ）](https://atcoder.jp/contests/abc099/tasks/)
+- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-099/)
+
+### ABC-099:C Strange Bank 
+再帰関数で解いた。
+
+解説が理解できない。
+
+<!------------------------------------------------------------------------------------------------------------------->
+# <a href="#ABC-100">ABC-100</a>
+---
+- [問題（AtCoderへ）](https://atcoder.jp/contests/abc100/tasks/)
+- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-100/)
+
+### ABC-100:C *3 or /2 
+2で割り切れる回数の合計を求める
 
 <!------------------------------------------------------------------------------------------------------------------->
 # <a href="#ABC-106">ABC-106</a>
