@@ -1,29 +1,29 @@
 ﻿# AtCoder で解いた問題と感想
 
-## 目次
-# <a href="#oboeteokitai">覚えておきたい問題</a>
-- [ABC-042](#ABC-042) B: 文字列のソート [Iroha Loves Strings]
-- [ABC-044](#ABC-044) B: アルファベットと文字コード [Beautiful Strings]
-- [ABC-054](#ABC-054) C: 無向グラフ、深さ優先探索（DFS）[One-Stroke Path]
-- [ABC-106](#ABC-106) D: 二次元配列の累積和 [AtCoder Express2]
-- [ABC-118](#ABC-118) C: ユークリッドの互除法 [Monster Batle Royale]
-- [ABC-122](#ABC-122) C: 累積和の典型問題 [GeT AC]
-- [ABC-075](#ABC-075) C: グラフ、DFSの再帰関数
-- [ABC-079](#ABC-079) C: ビットのシフトを使った全探索(ABC-045:Cも)
-- [ABC-080](#ABC-080) C: ビットのシフトを使った全探索(さらに)
-- [ABC-105](#ABC-105) C: -2進数 
-- [ABC-130](#ABC-130) D: しゃくとり法
-- [Tenka1_2019](#Tenka1_2019) C: 累積和
+# 覚えておきたい問題
+- ABC-042 B: 文字列のソート [Iroha Loves Strings]
+- ABC-044 B: アルファベットと文字コード [Beautiful Strings]
+- ABC-054 C: 無向グラフ、深さ優先探索（DFS）[One-Stroke Path]
+- ABC-106 D: 二次元配列の累積和 [AtCoder Express2]
+- ABC-118 C: ユークリッドの互除法 [Monster Batle Royale]
+- ABC-122 C: 累積和の典型問題 [GeT AC]
+- ABC-075 C: グラフ、DFSの再帰関数
+- ABC-079 C: ビットのシフトを使った全探索(ABC-045:Cも)
+- ABC-080 C: ビットのシフトを使った全探索(さらに)
+- ABC-105 C: -2進数 
+- ABC-130 D: しゃくとり法
+- Tenka1-2019 C: 累積和
 
-# <a href="#oboeteokitai">また考えたい問題</a>
+# また考えたい問題
 - [ABC-045](#ABC-045) C: 実装が難しい [Many Formulas]
 - [ABC-104](#ABC-104) C: 解き方難しい [All Green]
 
-<!------------------------------------------------------------------------------------------------------------------->
-# <a href="#ABC-042">ABC-042</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc042/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-042/)
+
+# 解いた問題たち
+
+
+
+## ABC-042
 
 ### ABC-042:A Iroha and Haiku
 三つの数字が俳句「575」かどうか判定する問題。
@@ -53,11 +53,8 @@ std::sort(s.gegin(), s.end(), std::greater<int>());
 参考：http://7ujm.net/stl/sort.html
 
 
-<!------------------------------------------------------------------------------------------------------------------->
-# <a href="#ABC-043">ABC-043</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc043/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-043/)
+
+## ABC-043
 
 ### ABC-043:A Children and Candies
 1+2+......+N と足し合わせていく問題。
@@ -70,11 +67,8 @@ std::sort(s.gegin(), s.end(), std::greater<int>());
 他の解法も確認したい。
 
 
-<!------------------------------------------------------------------------------------------------------------------->
-# <a href="#ABC-044">ABC-044</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc044/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-044/)
+
+## ABC-044
 
 ### ABC-044:A Tak and Hotels
 ホテル代を求める問題。
@@ -88,11 +82,9 @@ A問題の中でも好きな問題。
 この方法は結構使う気がする。
 他の解法もあるのだろうか。
 
-<!------------------------------------------------------------------------------------------------------------------->
-# <a href="#ABC-045">ABC-045</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc045/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-045/)
+
+
+## ABC-045
 
 ### ABC-045:A 台形 / Trapezoids
 台形の面積を求めるだけ。
@@ -124,11 +116,9 @@ A問題の中でも好きな問題。
 
 また今度考えよう。
 
-<!------------------------------------------------------------------------------------------------------------------->
-# <a href="#ABC-051">ABC-051</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc051/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-051/)
+
+
+## ABC-051
 
 ### ABC-051:C Back and Forth
 条件を見落としてた（sx < tx, sy < ty）。
@@ -138,11 +128,9 @@ A問題の中でも好きな問題。
 典型問題でも解けるか不安。
 
 
-<!------------------------------------------------------------------------------------------------------------------->
-# <a href="#ABC-054">ABC-054</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc054/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-054/)
+
+
+## ABC-054
 
 ### ABC-054:C One-Stroke Path
 解説を読んだ。グラフを扱う問題もまだまだ不慣れ。
@@ -155,6 +143,7 @@ graph配列をグローバルで宣言したくないから
 main関数内で二次元配列（隣接行列）を宣言して関数に渡した。
 
 こんな感じ。
+
 
 ```
 func(bool *g[]);
@@ -172,11 +161,7 @@ int main()
 }
 ```
 
-<!------------------------------------------------------------------------------------------------------------------->
-# <a href="#ABC-057">ABC-057</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc057/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-057/)
+## ABC-057
 
 ### ABC-057:C Digits in Multiplication
 整数Nが与えられて、N = AB の A と B を求める。
@@ -209,11 +194,8 @@ intがオーバーフローしてたのかも（WAになるのか？）。
 初めて、vectorでpairを使ってみた。便利。make_pairの使い方をもうちょっと調べる。
 
 
-<!------------------------------------------------------------------------------------------------------------------->
+
 # <a href="#ABC-064">ABC-064</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc064/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-064/)
 
 ### ABC-064:C Colorful Leaderboard
 レートが与えられるから色の種類の最小と最大を求める問題。
@@ -222,11 +204,9 @@ intがオーバーフローしてたのかも（WAになるのか？）。
 レート3200以上の人をどう処理するかがちょっと迷うところ。
 3200の人しかいない場合を場合分けする必要がある。
 
-<!------------------------------------------------------------------------------------------------------------------->
+
+
 # <a href="#ABC-070">ABC-070</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc070/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-070/)
 
 ### ABC-070:C Multiple Clocks
 一周する速さが異なる時計が同時に針が真上を向くまでの時間を求める問題。
@@ -250,11 +230,9 @@ a * b / g
 a / g * b
 ```
 
-<!------------------------------------------------------------------------------------------------------------------->
+
+
 # <a href="#ABC-073">ABC-073</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc073/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-073/)
 
 ### ABC-073:C Write and Erase
 N個の数字が与えられて、
@@ -267,11 +245,10 @@ N個の数字が与えられて、
 
 ちょっと時間かかったけど解けた。
 
-<!------------------------------------------------------------------------------------------------------------------->
+
+
+
 # <a href="#ABC-075">ABC-075</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc075/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-075/)
 
 ### ABC-075:C Bridge
 グラフの辺が橋かどうかを判定する問題。
@@ -282,11 +259,10 @@ N個の数字が与えられて、
 グラフ問題の再帰関数は感動する。
 こんなにきれいな関数もなかなかない気がする。
 
-<!------------------------------------------------------------------------------------------------------------------->
+
+
+
 # <a href="#ABC-076">ABC-076</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc076/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-076/)
 
 ### ABC-076:C Dubious Document 2
 自力ACできた。うれしい。
@@ -309,11 +285,10 @@ N個の数字が与えられて、
 
 そして、余った'?'は全て'a'に置換する。辞書順最小なので。
 
-<!------------------------------------------------------------------------------------------------------------------->
+
+
+
 # <a href="#ABC-079">ABC-079</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc079/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-079/)
 
 ### ABC-079:C Train Ticket
 解くこと自体は簡単。
@@ -321,11 +296,10 @@ N個の数字が与えられて、
 if文8個書けばいいわけだけど、
 ビットのシフトを使った方がちゃんとしてると思う。
 
-<!------------------------------------------------------------------------------------------------------------------->
+
+
+
 # <a href="#ABC-080">ABC-080</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc080/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-080/)
 
 ### ABC-080:C Shopping Street
 ビットシフトを使う問題。
@@ -363,11 +337,10 @@ for(int i = 0; i < 1<<10; i++)
 
 これで一ビットずつ判定ができる。
 
-<!------------------------------------------------------------------------------------------------------------------->
+
+
+
 # <a href="#ABC-084">ABC-084</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc084/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-084/)
 
 ### ABC-084:C Special Trains
 N個の駅、i から i+1 の駅に時間Ciで到着、
@@ -377,11 +350,10 @@ N個の駅、i から i+1 の駅に時間Ciで到着、
 
 Nが小さいからシミュレーションで十分解ける問題だった。
 
-<!------------------------------------------------------------------------------------------------------------------->
+
+
+
 # <a href="#ABC-085">ABC-085</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc085/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-085/)
 
 ### ABC-085:C Otoshidama 
 けんちょんさんの記事でみた問題。
@@ -390,18 +362,19 @@ Nが小さいからシミュレーションで十分解ける問題だった。
 
 処理時間を削減するためのちょっとした工夫が思いつけるかどうか。
 
-<!------------------------------------------------------------------------------------------------------------------->
+
+
+
 # <a href="#ABC-088">ABC-088</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc088/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-088/)
 
 ### ABC-088:C Takahashi's Information 
 解説を読んだら、なるほどって感じの問題だった。
 
 なぜか解けない。
 
-<!------------------------------------------------------------------------------------------------------------------->
+
+
+
 # <a href="#ABC-089">ABC-089</a>
 ---
 - [問題（AtCoderへ）](https://atcoder.jp/contests/abc089/tasks/)
@@ -411,61 +384,59 @@ Nが小さいからシミュレーションで十分解ける問題だった。
 'M''A''R''C''H'をそれぞれ数えて、
 全通り（10通り）全て数えて合計したものが答え。
 
-<!------------------------------------------------------------------------------------------------------------------->
+
+
+
 # <a href="#ABC-096">ABC-096</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc096/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-096/)
 
 ### ABC-096:C Grid Repainting2 
 '#'が二つ続くマスがあるかどうか判定するだけの問題。
 
-<!------------------------------------------------------------------------------------------------------------------->
+
+
+
 # <a href="#ABC-099">ABC-099</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc099/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-099/)
 
 ### ABC-099:C Strange Bank 
 再帰関数で解いた。
 
 解説が理解できない。
 
-<!------------------------------------------------------------------------------------------------------------------->
+
+
+
+
 # <a href="#ABC-100">ABC-100</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc100/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-100/)
 
 ### ABC-100:C *3 or /2 
 2で割り切れる回数の合計を求める
 
-<!------------------------------------------------------------------------------------------------------------------->
+
+
+
+
 # <a href="#ABC-103">ABC-103</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc103/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-103/)
 
 ### ABC-103:C Modulo Summation
 はじめは全探索してもいいのかなと思ったけど、
 よう見たら簡単に計算できることに気づいた。
 
-<!------------------------------------------------------------------------------------------------------------------->
+
+
+
+
 # <a href="#ABC-104">ABC-104</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc104/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-104/)
 
 ### ABC-104:C All Green
 解説を読んだ。
 お手本コードを読んで大体わかったんだけど、
 自分で解くのはしんどいなって感じ。
 
-<!------------------------------------------------------------------------------------------------------------------->
+
+
+
+
 # <a href="#ABC-105">ABC-105</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc105/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-105/)
 
 ### ABC-105:C Base -2 Number
 　よく分からなかった。
@@ -474,11 +445,11 @@ Nが小さいからシミュレーションで十分解ける問題だった。
 
 http://drken1215.hatenablog.com/entry/2018/08/13/123600
 
-<!------------------------------------------------------------------------------------------------------------------->
+
+
+
+
 # <a href="#ABC-106">ABC-106</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc106/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-106/)
 
 ### ABC-106:D AtCoder Express 2
 コンテスト時に解けなくて解説動画を見た問題。また解いてみた。
@@ -489,22 +460,22 @@ http://drken1215.hatenablog.com/entry/2018/08/13/123600
 解説動画を見てこの累積和を知ったとき感動した。
 今まで解いた問題ではトップクラスに好き。
 
-<!------------------------------------------------------------------------------------------------------------------->
+
+
+
+
 # <a href="#ABC-108">ABC-108</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc108/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-108/)
 
 ### ABC-108:B Ruined Square
 正方形の四つ角のうち、二つが与えられるからあとの二つを求める。
 問題は簡単だけど、頭の中でイメージしづらかった。
 紙に書いてなんとか分かるくらい。
 
-<!------------------------------------------------------------------------------------------------------------------->
+
+
+
+
 # <a href="#ABC-110">ABC-110</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc110/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-110/)
 
 ### ABC-110:C String Transformation
 問題文読んだときは難しそうだなって感じたけど、
@@ -519,12 +490,12 @@ apple
 01123
 ```
 以上のように、文字列を数列に変換するとできる
-<!------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
 # <a href="#ABC-118">ABC-118</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc118/tasks/)
-- [解説動画](https://www.youtube.com/watch?v=qBxvXX5hkAA)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-118/)
 
 ### ABC-118:A B+/-A
 AがBの約数かどうか判定する問題。
@@ -542,12 +513,11 @@ AでBが割り切れるかどうかで条件分岐。
 ユークリッドの互除法に近いことはしてたみたい。
 でも圧倒的にstd::gcd()使った方が簡潔で分かりやすい。
 
-<!------------------------------------------------------------------------------------------------------------------->
+
+
+
+
 # <a href="#ABC-120">ABC-120</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc120/tasks/)
-- [解説動画](https://youtu.be/zV3Ul2pA2Fw)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-120/)
 
 ### ABC-120:A Favorite Sound
 いつも通りのA問題。
@@ -582,12 +552,12 @@ for(int i = 0; i < S.size(); i++)
 }
 ```
 
-<!------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
 # <a href="#ABC-121">ABC-121</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc121/tasks/)
-- [解説動画](https://youtu.be/igfVeTsGeYw)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-121/)
 
 ### ABC-121:A White Cells 
 単純に面積を求めるような問題。
@@ -622,11 +592,11 @@ mapは勝手にソートもしてくれるらしく、
 となんとなく思い出せた。
 それだけでもコンテストに出たかいがある。
 
-<!------------------------------------------------------------------------------------------------------------------->
+
+
+
+
 # <a href="#ABC-122">ABC-122</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc122/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-122/)
 
 ### ABC-122:A Double Helix
 ある文字の入力を受けて、
@@ -646,11 +616,11 @@ mapは勝手にソートもしてくれるらしく、
 解説を読んでめちゃくちゃ簡単じゃんってなった。
 これくらいは安定して解きたい。
 
-<!------------------------------------------------------------------------------------------------------------------->
+
+
+
+
 # <a href="#ABC-124">ABC-124</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc124/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-124/)
 
 ### ABC-124:A Buttons
 AとBの大きいほうを足して一引く。
@@ -675,11 +645,11 @@ Sと同じ長さの文字列を二つ用意。
 解説動画を見たところ途中まではあってた。
 尺取り法か累積和を使うことが思い浮かべばいけたらしい。
 
-<!------------------------------------------------------------------------------------------------------------------->
+
+
+
+
 # <a href="#ABC-125">ABC-125</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc125/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-125/)
 
 ### ABC-125:A Biscuit Generator
 B * (T / A) みたいな感じ
@@ -696,11 +666,11 @@ WAが一つ残ってどうしようもなくなった。
 解説を読んでめちゃくちゃ簡単だということが分かった。
 やっぱり紙にメモすることが大事かな。
 
-<!------------------------------------------------------------------------------------------------------------------->
+
+
+
+
 # <a href="#ABC-130">ABC-130</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc130/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-130/)
 
 ### ABC-130:B
 範囲を間違って1WA
@@ -713,11 +683,11 @@ WAが一つ残ってどうしようもなくなった。
 そして実装に失敗した
 解説記事を読んで理解
 
-<!------------------------------------------------------------------------------------------------------------------->
+
+
+
+
 # <a href="#ABC-131">ABC-131</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc131/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-131/)
 
 ### ABC-131:A
 if文
@@ -757,11 +727,11 @@ sort(p.begin(), p.end());
 注意点として、pair.firstでソートされるので、
 ソートしたいほうをfirstにいれる。
 
-<!------------------------------------------------------------------------------------------------------------------->
+
+
+
+
 # <a href="#ARC-095">ARC-095</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/arc095/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ARC-095/)
 
 ### ARC-095:D Binomial Coefficients
 複数の整数から二つとってcomb(n,r)が最大となる組を見つける問題。
@@ -772,11 +742,11 @@ sort(p.begin(), p.end());
 どこが悪いのか分からないままちょこちょこいじってたらACした。
 よくわからない。
 
-<!------------------------------------------------------------------------------------------------------------------->
+
+
+
+
 # <a href="#AGC-031">AGC-031</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/agc031/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/AGC-031/)
 
 ### AGC-031:A Colorful Subsequence
 アルファベットの文字列から部分列の数を数える問題。
@@ -786,11 +756,10 @@ sort(p.begin(), p.end());
 解説を読んでそんな簡単に解けるんだなーという感想。
 思いつかない。
 
-<!------------------------------------------------------------------------------------------------------------------->
+
+
+
 # <a href="#AGC-032">AGC-032</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/agc032/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/AGC-032/)
 
 ### AGC-032:A Limited Insertion
 空の数列にN回挿入していく問題。
@@ -814,11 +783,11 @@ sort(p.begin(), p.end());
 「最後の操作が何だったかを探す」を繰り返すだけで求められる。
 また、その数列で操作可能な数字のうち、一番右を選択する。
 
-<!------------------------------------------------------------------------------------------------------------------->
+
+
+
+
 # <a href="#Mujin2018">Mujin2018</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/mujin-pc-2018)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/Mujin2018/)
 
 ### Mujin2018: C 右折
 '.'と'#'から成る二次元配列があり、
@@ -830,11 +799,11 @@ sort(p.begin(), p.end());
 その後なぜか二時間近くWAが出続けてなんだこれって思ってたら、
 intのところをCharで宣言していてつらくなった。
 
-<!------------------------------------------------------------------------------------------------------------------->
+
+
+
+
 # <a href="#EXAWIZARDS2018">EXAWIZARDS2018</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/exawizards2019)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/EXAWIZARDS2018/)
 
 ### EXAWIZARDS2018:A Regular Triangle 
 正三角形かどうか判定する問題。
@@ -844,11 +813,10 @@ intのところをCharで宣言していてつらくなった。
 文字列の'B'と'R'を数える問題。
 それだけ。
 
-<!------------------------------------------------------------------------------------------------------------------->
+
+
+
 # <a href="#Tenka1_2019">Tenka1_2019</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/tenka1-2019-beginner)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/Tenka2019/)
 
 ### Tenka1_2019:A On the Way 
 とくになし
