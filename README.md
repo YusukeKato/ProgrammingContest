@@ -15,12 +15,11 @@
 - Tenka1-2019 C: 累積和
 
 # また考えたい問題
-- [ABC-045](#ABC-045) C: 実装が難しい [Many Formulas]
-- [ABC-104](#ABC-104) C: 解き方難しい [All Green]
+- ABC-045 C: 実装が難しい [Many Formulas]
+- ABC-104 C: 解き方難しい [All Green]
 
 
 # 解いた問題たち
-
 
 
 ## ABC-042
@@ -179,11 +178,7 @@ std::to_string(num).length();
 参考：https://qiita.com/EqualL2/items/168e083caa5f07a1105b
 
 
-<!------------------------------------------------------------------------------------------------------------------->
-# <a href="#ABC-061">ABC-061</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc061/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-061/)
+## ABC-061
 
 ### ABC-061:C Big Array
 i番目にai（整数）をbi（個数）を挿入した数列においてK番目に小さい値を求める問題。
@@ -195,7 +190,7 @@ intがオーバーフローしてたのかも（WAになるのか？）。
 
 
 
-# <a href="#ABC-064">ABC-064</a>
+## ABC-064
 
 ### ABC-064:C Colorful Leaderboard
 レートが与えられるから色の種類の最小と最大を求める問題。
@@ -206,7 +201,7 @@ intがオーバーフローしてたのかも（WAになるのか？）。
 
 
 
-# <a href="#ABC-070">ABC-070</a>
+## ABC-070
 
 ### ABC-070:C Multiple Clocks
 一周する速さが異なる時計が同時に針が真上を向くまでの時間を求める問題。
@@ -232,7 +227,7 @@ a / g * b
 
 
 
-# <a href="#ABC-073">ABC-073</a>
+## ABC-073
 
 ### ABC-073:C Write and Erase
 N個の数字が与えられて、
@@ -248,7 +243,7 @@ N個の数字が与えられて、
 
 
 
-# <a href="#ABC-075">ABC-075</a>
+## ABC-075
 
 ### ABC-075:C Bridge
 グラフの辺が橋かどうかを判定する問題。
@@ -262,7 +257,7 @@ N個の数字が与えられて、
 
 
 
-# <a href="#ABC-076">ABC-076</a>
+## ABC-076
 
 ### ABC-076:C Dubious Document 2
 自力ACできた。うれしい。
@@ -288,7 +283,7 @@ N個の数字が与えられて、
 
 
 
-# <a href="#ABC-079">ABC-079</a>
+## ABC-079
 
 ### ABC-079:C Train Ticket
 解くこと自体は簡単。
@@ -299,7 +294,7 @@ if文8個書けばいいわけだけど、
 
 
 
-# <a href="#ABC-080">ABC-080</a>
+## ABC-080
 
 ### ABC-080:C Shopping Street
 ビットシフトを使う問題。
@@ -340,7 +335,7 @@ for(int i = 0; i < 1<<10; i++)
 
 
 
-# <a href="#ABC-084">ABC-084</a>
+## ABC-084
 
 ### ABC-084:C Special Trains
 N個の駅、i から i+1 の駅に時間Ciで到着、
@@ -353,7 +348,7 @@ Nが小さいからシミュレーションで十分解ける問題だった。
 
 
 
-# <a href="#ABC-085">ABC-085</a>
+## ABC-085
 
 ### ABC-085:C Otoshidama 
 けんちょんさんの記事でみた問題。
@@ -365,7 +360,7 @@ Nが小さいからシミュレーションで十分解ける問題だった。
 
 
 
-# <a href="#ABC-088">ABC-088</a>
+## ABC-088
 
 ### ABC-088:C Takahashi's Information 
 解説を読んだら、なるほどって感じの問題だった。
@@ -375,10 +370,7 @@ Nが小さいからシミュレーションで十分解ける問題だった。
 
 
 
-# <a href="#ABC-089">ABC-089</a>
----
-- [問題（AtCoderへ）](https://atcoder.jp/contests/abc089/tasks/)
-- [ソースコード](https://github.com/YusukeKato/ProgrammingContest/blob/master/atcoder/ABC-089/)
+## ABC-089
 
 ### ABC-089:C March 
 'M''A''R''C''H'をそれぞれ数えて、
@@ -387,7 +379,7 @@ Nが小さいからシミュレーションで十分解ける問題だった。
 
 
 
-# <a href="#ABC-096">ABC-096</a>
+## ABC-096
 
 ### ABC-096:C Grid Repainting2 
 '#'が二つ続くマスがあるかどうか判定するだけの問題。
@@ -395,7 +387,7 @@ Nが小さいからシミュレーションで十分解ける問題だった。
 
 
 
-# <a href="#ABC-099">ABC-099</a>
+## ABC-099
 
 ### ABC-099:C Strange Bank 
 再帰関数で解いた。
@@ -406,7 +398,7 @@ Nが小さいからシミュレーションで十分解ける問題だった。
 
 
 
-# <a href="#ABC-100">ABC-100</a>
+## ABC-100
 
 ### ABC-100:C *3 or /2 
 2で割り切れる回数の合計を求める
@@ -415,7 +407,7 @@ Nが小さいからシミュレーションで十分解ける問題だった。
 
 
 
-# <a href="#ABC-103">ABC-103</a>
+## ABC-103
 
 ### ABC-103:C Modulo Summation
 はじめは全探索してもいいのかなと思ったけど、
@@ -425,7 +417,7 @@ Nが小さいからシミュレーションで十分解ける問題だった。
 
 
 
-# <a href="#ABC-104">ABC-104</a>
+## ABC-104
 
 ### ABC-104:C All Green
 解説を読んだ。
@@ -436,7 +428,7 @@ Nが小さいからシミュレーションで十分解ける問題だった。
 
 
 
-# <a href="#ABC-105">ABC-105</a>
+## ABC-105
 
 ### ABC-105:C Base -2 Number
 　よく分からなかった。
@@ -449,7 +441,7 @@ http://drken1215.hatenablog.com/entry/2018/08/13/123600
 
 
 
-# <a href="#ABC-106">ABC-106</a>
+## ABC-106
 
 ### ABC-106:D AtCoder Express 2
 コンテスト時に解けなくて解説動画を見た問題。また解いてみた。
@@ -464,7 +456,7 @@ http://drken1215.hatenablog.com/entry/2018/08/13/123600
 
 
 
-# <a href="#ABC-108">ABC-108</a>
+## ABC-108
 
 ### ABC-108:B Ruined Square
 正方形の四つ角のうち、二つが与えられるからあとの二つを求める。
@@ -475,7 +467,7 @@ http://drken1215.hatenablog.com/entry/2018/08/13/123600
 
 
 
-# <a href="#ABC-110">ABC-110</a>
+## ABC-110
 
 ### ABC-110:C String Transformation
 問題文読んだときは難しそうだなって感じたけど、
@@ -495,7 +487,7 @@ apple
 
 
 
-# <a href="#ABC-118">ABC-118</a>
+## ABC-118
 
 ### ABC-118:A B+/-A
 AがBの約数かどうか判定する問題。
@@ -517,7 +509,7 @@ AでBが割り切れるかどうかで条件分岐。
 
 
 
-# <a href="#ABC-120">ABC-120</a>
+## ABC-120
 
 ### ABC-120:A Favorite Sound
 いつも通りのA問題。
@@ -557,7 +549,7 @@ for(int i = 0; i < S.size(); i++)
 
 
 
-# <a href="#ABC-121">ABC-121</a>
+## ABC-121
 
 ### ABC-121:A White Cells 
 単純に面積を求めるような問題。
@@ -596,7 +588,7 @@ mapは勝手にソートもしてくれるらしく、
 
 
 
-# <a href="#ABC-122">ABC-122</a>
+## ABC-122
 
 ### ABC-122:A Double Helix
 ある文字の入力を受けて、
@@ -620,7 +612,7 @@ mapは勝手にソートもしてくれるらしく、
 
 
 
-# <a href="#ABC-124">ABC-124</a>
+## ABC-124
 
 ### ABC-124:A Buttons
 AとBの大きいほうを足して一引く。
@@ -649,7 +641,7 @@ Sと同じ長さの文字列を二つ用意。
 
 
 
-# <a href="#ABC-125">ABC-125</a>
+## ABC-125
 
 ### ABC-125:A Biscuit Generator
 B * (T / A) みたいな感じ
@@ -670,7 +662,7 @@ WAが一つ残ってどうしようもなくなった。
 
 
 
-# <a href="#ABC-130">ABC-130</a>
+## ABC-130
 
 ### ABC-130:B
 範囲を間違って1WA
@@ -687,7 +679,7 @@ WAが一つ残ってどうしようもなくなった。
 
 
 
-# <a href="#ABC-131">ABC-131</a>
+## ABC-131
 
 ### ABC-131:A
 if文
@@ -731,7 +723,7 @@ sort(p.begin(), p.end());
 
 
 
-# <a href="#ARC-095">ARC-095</a>
+## ARC-095
 
 ### ARC-095:D Binomial Coefficients
 複数の整数から二つとってcomb(n,r)が最大となる組を見つける問題。
@@ -746,7 +738,7 @@ sort(p.begin(), p.end());
 
 
 
-# <a href="#AGC-031">AGC-031</a>
+## AGC-031
 
 ### AGC-031:A Colorful Subsequence
 アルファベットの文字列から部分列の数を数える問題。
@@ -759,7 +751,7 @@ sort(p.begin(), p.end());
 
 
 
-# <a href="#AGC-032">AGC-032</a>
+## AGC-032
 
 ### AGC-032:A Limited Insertion
 空の数列にN回挿入していく問題。
@@ -787,7 +779,7 @@ sort(p.begin(), p.end());
 
 
 
-# <a href="#Mujin2018">Mujin2018</a>
+## Mujin2018
 
 ### Mujin2018: C 右折
 '.'と'#'から成る二次元配列があり、
@@ -803,7 +795,7 @@ intのところをCharで宣言していてつらくなった。
 
 
 
-# <a href="#EXAWIZARDS2018">EXAWIZARDS2018</a>
+## EXAWIZARDS2018
 
 ### EXAWIZARDS2018:A Regular Triangle 
 正三角形かどうか判定する問題。
@@ -816,19 +808,22 @@ intのところをCharで宣言していてつらくなった。
 
 
 
-# <a href="#Tenka1_2019">Tenka1_2019</a>
+## Tenka1-2019
 
-### Tenka1_2019:A On the Way 
+### Tenka1-2019:A On the Way 
 とくになし
 
-### Tenka1_2019:B *e**** ********e* *e****e* ****e** 
+### Tenka1-2019:B *e**** ********e* *e****e* ****e** 
 文字を置換するだけ
 
-### Tenka1_2019:C Stones 
+### Tenka1-2019:C Stones 
 累積和が思いつかない。
 鍛錬が足りない。
 
-# <a href="#sankou">参考</a>
+
+
+
+## 参考
 
 今すぐ使える C++ コーディングテクニック集
 https://torus711.hatenablog.com/entry/20131205/p1
