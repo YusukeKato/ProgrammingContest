@@ -1,53 +1,59 @@
 #include <iostream>
-#include <vector>
 using namespace std;
-
-int mtx[101][101] = {0};
-
-class graph
-{
-    public:
-    vector<int> a;
-    vector<int> b;
-    vector<int> c;
-};
-
-void calc(int start, int end)
-{
-    
-}
 
 int main()
 {
-    int N, M;
-    cin >> N >> M;
+	const int INF = 1<<29;
+	int N, M;
+	cin >> N >> M;
 
-    graph g;
+	int a[1001] = {0};
+	int b[1001] = {0};
+	int c[1001] = {0};
+	int dist[101][101] = {0};
 
-    for(int i = 0; i < M; i++)
-    {
-        int A, B, C;
-        cin >> A >> B >> C;
-        g.a.push_back(A);
-        g.b.push_back(B);
-        g.c.push_back(C);
-    }
+	//ワーシャルフロイド法の初期化
+	for(int i = 0; i < N; i++)
+	{
+		for(int j = 0; j < N; j++)
+		{
+			dist[i][j] = INF;
+		}
+		dist[i][i] = 0; //自分への距離はゼロ
+	}
 
-    for(int i = 0; i < M; i++)
-    {
-        mtx[g.a[i]][g.b[i]] = g.c[i];
-    }
+	for(int i = 0; i < M; i++)
+	{
+		cin >> a[i] >> b[i] >> c[i];
+		a[i]--; b[i]--; //インデックスのベースを１→０
+		dist[a[i]][b[i]] = c[i];
+		dist[b[i]][a[i]] = c[i];
+	}
 
-    for(int i = 1; i <= M; i++)
-    {
-        for(int j = 1; j <= M; j++)
-        {
-            if(i < j)
-            {
-                calc(i, j);
-            }
-        }
-    }
+	//ワーシャルフロイド法
+	for(int k = 0; k < N; k++)
+	{
+		for(int i = 0; i < N; i++)
+		{
+			for(int j = 0; j < N; j++)
+			{
+				dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j]);
+			}
+		}
+	}
 
-    return 0;
+	//この時点でdistには各頂点間の最短経路が入ってる
+
+	//a[i]→b[i]間の距離が更新されている場合は、迂回路のほうが最短経路であるということ
+	//つまりそのa[i]→b[i]は、いかなる経路においても最短経路として使われない経路である
+	//(a[i]→b[i]を移動したいとき迂回経路のほうが最短経路となっているということ)
+	int cnt = 0;
+	for(int i = 0; i < M; i++)
+	{
+		if(c[i] > dist[a[i]][b[i]]) cnt++;
+	}
+
+	cout << cnt << endl;
+
+	return 0;
 }

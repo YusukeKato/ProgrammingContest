@@ -1,44 +1,47 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+typedef long long ll;
 
 int main()
 {
+	const int MAX = 101;
+	vector<int> xx(MAX);
+	vector<int> yy(MAX);
+	vector<ll> hh(MAX);
 	int N;
 	cin >> N;
-	vector<int> x(101, 0);
-	vector<int> y(101, 0);
-	vector<int> h(101, 0);
 	for(int i = 0; i < N; i++)
 	{
-		cin >> x[i] >> y[i] >> h[i];
+		int x, y;
+		ll h;
+		cin >> x >> y >> h;
+		xx[i] = x;
+		yy[i] = y;
+		hh[i] = h;
 	}
-
-	int xx = 0;
-	int yy = 0;
-	for(int i = 0; i <= 100; i++)
+	for(int cx = 0; cx < MAX; cx++)
 	{
-		for(int j = 0; j <= 100; j++)
+		for(int cy = 0; cy < MAX; cy++)
 		{
-			int p = abs(i - x[0]) + abs(j - y[0]) + h[0];
-			bool flag = true;
-			for(int n = 1; n < N; n++)
+			ll H;
+			for(int i = 0; i < N; i++)
 			{
-				int p2 = abs(i - x[n]) + abs(j - y[n]) + h[n];
-				if(p != p2) flag = false;
+				if(hh[i] != 0) H = hh[i] + (ll)abs(xx[i]-cx) + (ll)abs(yy[i]-cy);
+			}
+			bool flag = true;
+			for(int i = 0; i < N; i++)
+			{
+				ll tmph = max(H - (ll)abs(xx[i]-cx) - (ll)abs(yy[i]-cy), 0LL);
+				if(tmph != hh[i]) flag = false;
 			}
 			if(flag == true)
 			{
-				xx = i;
-				yy = j;
+				cout << cx << " " << cy << " " << H << endl;
+				return 0;
 			}
 		}
 	}
-
-	
-	int hh = h[0] + abs(x[0] - xx) + abs(y[0] - yy);
-
-	cout << xx << " " << yy << " " << hh << endl;
 
 	return 0;
 }
